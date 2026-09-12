@@ -4,7 +4,9 @@
 
 ## The story it closes
 
-Closes S-__
+Closes #__
+
+<!-- The issue number, not the story ID. Closes S-1 does nothing; Closes #1 closes the issue when this is merged. -->
 
 ## AI-Assisted
 
