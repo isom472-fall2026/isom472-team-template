@@ -77,6 +77,23 @@ boundary. The other person reviews the pull request — their review is the agre
 This takes ten minutes and saves a day. It is also the single best prompt you can give an
 AI assistant: it knows exactly what to produce.
 
+## Publishing your proposal page
+
+Your repository already publishes a page. It is switched on for you — you do not need to
+change any setting.
+
+1. Edit `docs/index.html`. Replace every placeholder with your proposal content. Keep the
+   eight headings exactly as they are.
+2. Merge it to `main` the normal way, through a pull request.
+3. Wait about a minute, then open `https://<owner>.github.io/<repository-name>/docs/` and
+   check that it loads.
+4. Put that link at the top of `README.md`.
+
+The page is checked as **reachable**, not as beautiful. Do not spend time on its design.
+
+If the link still shows "404" ten minutes after your merge, tell your instructor. It is a
+setting on the repository, not something you broke.
+
 ## Phases
 
 Six phases. Each ends on a Wednesday, with a tag. **The tag is what gets graded** — work
