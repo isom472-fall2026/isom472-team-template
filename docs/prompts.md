@@ -33,7 +33,7 @@ Stop after ten stories. Do not write any code.
 ```
 Work on story <S-14>: <title>.
 
-Read the issue's acceptance criteria and docs/contracts/<file>.md before you start.
+Read the issue's acceptance criteria and the schema before you start.
 Build only what the criteria ask for. Do not change files the story did not name.
 
 When you are done, list what you changed and which criterion each change satisfies.
@@ -41,15 +41,17 @@ When you are done, list what you changed and which criterion each change satisfi
 
 ---
 
-## Agree a boundary with a teammate
+## Agree the shape before two of you build
 
 ```
 <Name> and I are building two halves of <the thing>. My half <does X>. Their half
 <does Y>.
 
-Draft a contract card for docs/contracts/, naming the thing that passes between us, its
-fields, which are required, and what happens on an error. Fix the shape; say nothing
-about how either side is built.
+List exactly what passes between the two halves: the table and columns it lives in,
+which ones cannot be empty, and what my half should do when a value is missing.
+
+Write it as acceptance criteria I can paste into the story. Say nothing about how
+either half is built, and do not write code.
 ```
 
 ---

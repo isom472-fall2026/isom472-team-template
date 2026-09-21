@@ -1,12 +1,13 @@
 name: Bug
 description: Something in the running system does not work.
-title: "[BUG] "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        The Quality Lead owns these. Every bug ends in a disposition: fixed, will not fix, or not a bug.
+        The Quality Lead owns these.
+
+        **When you close a bug, add one label to say how it ended: `fixed`, `wontfix` or `not-a-bug`.** A bug closed with no label is not counted.
   - type: textarea
     id: steps
     attributes:
@@ -38,5 +39,5 @@ body:
   - type: input
     id: story
     attributes:
-      label: Related story (optional)
-      description: The story ID this belongs to, if you know it.
+      label: Related story number (optional)
+      description: For example, #14.

@@ -6,7 +6,9 @@
 
 Closes #__
 
-<!-- The issue number, not the story ID. Closes S-1 does nothing; Closes #1 closes the issue when this is merged. -->
+<!-- The issue number. Writing "Closes S-14" does nothing; "Closes #14" closes issue 14
+     when this is merged. For work with no issue — the proposal, the prototype, personas,
+     a delivery note — write: No issue — <why>. -->
 
 ## AI-Assisted
 
@@ -15,13 +17,10 @@ Closes #__
 AI-Assisted: <tool> / <what it produced> / <what you changed>
 
 `AI-Assisted: none` is equally legitimate — writing it yourself is not a lesser answer.
-**Not declaring is the offence.**
+**Leaving this line out is what gets penalised.**
 
-## For the reviewer
+---
 
-- State what you checked. Not "looks good" — what you ran, what you read, what you clicked.
-- **Nobody approves their own pull request.**
-
-Checked:
-
-<!-- reviewer writes here -->
+**Reviewer: do not write here.** Open **Files changed → Review changes**, write what you
+ran, what you read and what you clicked, then choose **Approve**. That comment is your
+review. Nobody approves their own pull request.

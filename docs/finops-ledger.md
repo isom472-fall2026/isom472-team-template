@@ -1,31 +1,51 @@
 # FinOps ledger
 
+What the AI work cost you, and what you changed because of it.
+
 This ledger lives in the repository and is committed. It is never kept in a spreadsheet, a
 chat thread, or anywhere else. It is checked as **present and current** — it is not scored
-for the accuracy of the numbers. An honest rough figure beats a precise invented one.
+on how accurate the numbers are. An honest rough figure beats a precise invented one.
 
-The FinOps Lead keeps it; every team member supplies their own rows.
+The FinOps Lead keeps it. Every member supplies their own rows.
 
-## Sprint 1
+## The plan — written in Phase 2
 
-| Story ID | Model chosen | Why that model | Observed cost signal | Context tactics used | What we would do differently |
-|---|---|---|---|---|---|
-|  |  |  |  |  |  |
+*Which assistant or model you use for which kind of work, and what your limit is. Three or
+four lines. Revisit it in Phase 4 and say whether it held.*
 
-## Sprint 2
+| Kind of work | What we use | Why |
+|---|---|---|
+| <!-- EXAMPLE — delete this row --> writing stories from the proposal | the browser assistant | it is free and no code is involved |
+| <!-- EXAMPLE — delete this row --> building a story | Antigravity | it edits the files directly |
 
-| Story ID | Model chosen | Why that model | Observed cost signal | Context tactics used | What we would do differently |
-|---|---|---|---|---|---|
-|  |  |  |  |  |  |
+Our limit: <!-- EXAMPLE — delete --> the free tier. If we hit it we stop and tell the team.
 
-## Sprint 3
+## Phase 2
 
-| Story ID | Model chosen | Why that model | Observed cost signal | Context tactics used | What we would do differently |
-|---|---|---|---|---|---|
-|  |  |  |  |  |  |
+| Story | Assistant used | What it used (tokens, requests, or your own estimate) | What we gave it (files, story, schema) | What we would do differently |
+|---|---|---|---|---|
+|  |  |  |  |  |
 
-## Sprint 4
+## Phase 3
 
-| Story ID | Model chosen | Why that model | Observed cost signal | Context tactics used | What we would do differently |
-|---|---|---|---|---|---|
-|  |  |  |  |  |  |
+| Story | Assistant used | What it used (tokens, requests, or your own estimate) | What we gave it (files, story, schema) | What we would do differently |
+|---|---|---|---|---|
+|  |  |  |  |  |
+
+## Phase 4
+
+| Story | Assistant used | What it used (tokens, requests, or your own estimate) | What we gave it (files, story, schema) | What we would do differently |
+|---|---|---|---|---|
+|  |  |  |  |  |
+
+## Phase 5
+
+| Story | Assistant used | What it used (tokens, requests, or your own estimate) | What we gave it (files, story, schema) | What we would do differently |
+|---|---|---|---|---|
+|  |  |  |  |  |
+
+## Phase 6
+
+| Story | Assistant used | What it used (tokens, requests, or your own estimate) | What we gave it (files, story, schema) | What we would do differently |
+|---|---|---|---|---|
+|  |  |  |  |  |

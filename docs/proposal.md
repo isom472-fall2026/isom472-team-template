@@ -5,7 +5,7 @@ extra headings.
 
 ## 1. The client, and how you reach them
 
-*Who they are and how you actually get hold of them — name, organisation, and the channel
+*Who they are and how you contact them — name, organisation, and the channel
 you have already used. Two or three lines.*
 
 ## 2. What happens today, and what goes wrong
@@ -32,7 +32,7 @@ schema dump.*
 *Two lists. What will be working and demonstrable by the last week, and what you are
 deliberately leaving out.*
 
-## 7. The next life
+## 7. After the semester
 
 *What a future team or the client would do with this after you hand it over. Two or three
 lines.*

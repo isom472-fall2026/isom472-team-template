@@ -1,37 +1,76 @@
 # Instructions for AI assistants working in this repository
 
-This file is read by the AI assistant (Google Antigravity, or any tool that reads
-`AGENTS.md`). Students do not need to read it. It must stay in the repository.
+Read this before doing anything in this repository. It is written for the AI assistant
+(Google Antigravity, or any tool that reads `AGENTS.md`). Students do not need to read it.
+It must stay in the repository.
 
 It says the same things as `docs/how-we-work.md`, in the form an assistant needs.
 
 ## What this repository is
 
-A student team's capstone project for ISOM 472 at Kuwait University. Six students, six
-phases, one repository. The stack is a static front end published with GitHub Pages and
-Supabase for data and logins. Nothing in this course is paid for.
+A student team's capstone project for ISOM 472 at Kuwait University College of Business
+Administration. Four to six students, six phases, one repository.
 
 **The repository is the evidence.** Every change is traceable to a named student, a story,
 and a review. Preserve that trace in everything you do.
 
+## The stack — do not change it
+
+- Plain HTML, CSS and JavaScript. **No framework, no npm, no build step, no bundler.**
+- Supabase for data and logins, loaded from a CDN `<script>` tag.
+- The running system lives at the repository root: `/index.html`, `/js/`, `/css/`.
+- `docs/` is the proposal site, served by GitHub Pages. **Never edit `docs/index.html`
+  while building the system** — it is a different thing that happens to be nearby.
+
+If a task seems to need a framework or a build step, say so and stop. Do not scaffold one.
+
+## Keys and data
+
+- The Supabase **project URL and `anon` key are public**. They belong in `js/config.js`,
+  committed to the repository. That is correct and safe.
+- The **`service_role` key is never used in this course.** If a task appears to need it,
+  the design is wrong — say so and stop.
+- Row Level Security is on for every table. Never suggest turning it off to make something
+  work.
+- Never commit real client data, real names or real phone numbers. Seed data is invented.
+
 ## Before writing any code
 
-1. Find the issue this work belongs to. Work without an issue does not get merged.
-2. Read that issue's acceptance criteria. Build to them, not past them.
-3. If the work crosses a boundary between two members, read `docs/contracts/` for that
-   boundary first and build to the agreed shape.
-4. If there is no issue, or the acceptance criteria are unclear, or no contract exists for
-   a boundary you are about to cross — **stop and say so.** Do not guess and do not
-   invent an interface.
+1. Find the issue this work belongs to. Read its acceptance criteria and build to them,
+   not past them.
+2. If there is no issue, or the criteria are unclear, **stop and say so.** Do not guess.
+3. **Exception:** the proposal, the prototype, personas, the team agreement and delivery
+   notes do not need an issue.
 
 ## Scope
 
 Do what the story asks and stop. Do not refactor neighbouring code, rename things that
-already work, add dependencies, or "improve" files the story did not name. If you see a
-real problem outside the story, say it in one sentence and leave it alone — it becomes its
-own issue.
+work, add dependencies, or improve files the story did not name. If you see a real problem
+outside the story, say it in one sentence and leave it alone — it becomes its own issue.
 
 Prefer the smallest change that satisfies the acceptance criteria.
+
+## What you may and may not do with git
+
+- **You may:** create a branch, edit files, commit.
+- **You may not:** push, merge, open a pull request, approve one, create a tag, force push,
+  amend a pull request that is already open, or change history.
+
+Those are the student's acts, and the record of who did them is what gets graded.
+
+Commit messages use Conventional Commits with the issue number at the end:
+
+```
+feat(orders): add duplicate-order check  [#14]
+fix(login): reject an empty password  [#9]
+```
+
+Types: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`.
+
+One branch per story, named after it: `14-duplicate-orders`.
+
+Never add `Co-authored-by` or any tool trailer to a commit. The AI-Assisted line in the
+pull request is the declaration, and it is written by the student.
 
 ## Comments
 
@@ -41,8 +80,7 @@ Prefer the smallest change that satisfies the acceptance criteria.
 - Do add a comment where a reader would reasonably ask "why is it done this way?" — a
   workaround, a client rule, a non-obvious order of operations.
 - Never leave commented-out code. Delete it; the history keeps it.
-- Never write comments addressed to the student ("TODO: you may want to…") in code that is
-  being committed.
+- Never address the student in a code comment ("TODO: you may want to…").
 
 ## User stories
 
@@ -60,50 +98,37 @@ doing it. No criterion may contain "properly", "correctly", "well" or "user-frie
 One story is one thing a user can do. If a story needs the word "and" twice, it is two
 stories.
 
-You may draft stories. A named student edits and owns them. Never file an issue that has
-no student's name on it.
-
-## Commits
-
-Conventional Commits, with the story ID at the end:
-
-```
-feat(orders): add duplicate-order check  [S-14]
-fix(login): reject an empty password  [S-9]
-docs(contracts): add the order_line contract  [S-14]
-```
-
-Types: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`.
-
-One branch per story, named after it: `s-14-duplicate-orders`.
-
-Commit under the student's own GitHub account. Never commit on behalf of another member,
-and never change the author of a commit.
+You may draft stories. A named student edits and owns them.
 
 ## Pull requests
 
-Fill in `.github/pull_request_template.md` completely:
+The student opens it. You may draft the description, following
+`.github/pull_request_template.md`:
 
 - what changes, in plain language;
-- `Closes #<issue number>` — the issue number, not the story ID;
-- the **AI-Assisted** line: the tool, what it produced, what the student changed. If you
+- `Closes #<issue number>`;
+- the **AI-Assisted** line — the tool, what it produced, what the student changed. If you
   wrote code in this pull request, that line is not optional.
 
-Never mark a pull request as reviewed. Never approve one. Review is a human act in this
-course.
+Never write in the reviewer's section. Review is a human act in this course.
+
+## Before you say a task is done
+
+Open the page in a browser, use the feature, and state how each acceptance criterion was
+checked. "It should work" is not a check.
 
 ## Never
 
-- Never commit `.env`, API keys, Supabase service keys, passwords or client personal data.
-  This repository is public. See `.gitignore`.
-- Never push to `main`. Work goes through a branch and a pull request.
-- Never edit another member's contract file in `docs/contracts/` without that member in
-  the pull request.
-- Never put real client data in seed data. Invent it.
-- Never write numbers into `docs/finops-ledger.md` that you did not observe.
-- Never delete or rewrite history: no force pushes, no amended commits that are already
-  pushed.
-- Never add a build step, a bundler, a framework or a package the team did not ask for.
+- Never edit `docs/finops-ledger.md`. The team writes that from what they observed.
+- Never edit `docs/team-agreement.md`.
+- Never push to `main`.
+- Never commit `.env`, a `service_role` key, a password, or client personal data.
+- Never add a framework, bundler or package the team did not ask for.
+
+## If the client's users read Arabic
+
+Set `lang="ar"` and `dir="rtl"` on the page, and say so in the story. Do not mix an
+English layout with Arabic text and hope it reads.
 
 ## When you are unsure
 

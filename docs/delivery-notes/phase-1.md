@@ -1,35 +1,43 @@
 # Phase 1 delivery note
 
-*The Phase Lead for phase 1 writes this note, during phase 1 — not afterwards, and not by
-whoever is free at the end.*
+*The Phase 1 Lead writes this during phase 1 — not afterwards, and not by whoever is free
+at the end.*
 
-## What was delivered
+Phase 1 has no stories yet. It has five things, and they are either done or they are not.
 
-<!-- What works now that did not work at the start of the phase. Plain language, what a
-     user can do. Not a list of commits. -->
+## The five things
 
-## Who did what
+| | Done | Where it is |
+|---|---|---|
+| The proposal, in its eight sections | ☐ | `docs/proposal.md` |
+| The proposal published as a page | ☐ | link: |
+| The team table filled in on the front page | ☐ | `README.md` |
+| The team agreement, signed by everyone | ☐ | `docs/team-agreement.md` |
+| Every member has one commit GitHub shows under their name | ☐ | see the table below |
 
-<!-- One line per team member: name, then the stories they carried. Everybody appears. -->
+## Every member's first commit
 
-| Name | Stories |
+*One line per member. Paste the link to a commit that shows their photo and username. A
+grey icon means it is not counted — that member fixes it before the tag.*
+
+| Name | Link to their commit |
 |---|---|
 |  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
+|  |  |
 
-## Links to the stories
+## The client
 
-<!-- Link each story listed above to its issue. -->
+*Who they are, and the last time you actually spoke to them. One line.*
 
-- S-__ —
+## Anything not done, and what you are doing about it
 
-## The tag cut for this phase
+*Say which, and by when.*
 
-`phase-1`
+## The tag for this phase
 
-<!-- Cut by the Phase Lead. The tag is what gets graded — anything pushed after it does not
-     count for this phase. -->
-
-## Anything not finished, and where it went
-
-<!-- What was planned and did not land, and what happened to it: moved to the next phase,
-     dropped, or replaced. Say which. -->
+`phase-1` — created by the Phase Lead after the last merge. Steps:
+[how-we-work.md](../how-we-work.md#how-to-create-the-tag)
